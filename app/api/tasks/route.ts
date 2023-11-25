@@ -5,11 +5,11 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
-
+    
     if (!userId) {
       return NextResponse.json({ error: "Unauthorized", status: 401 });
     }
-
+    
     const { title, description, date, completed, important } = await req.json();
 
     if (!title || !description || !date) {
@@ -32,11 +32,9 @@ export async function POST(req: Request) {
         description,
         date,
         isCompleted: completed,
-        isImportant: important,
         userId,
       },
     });
-
     return NextResponse.json(task);
   } catch (error) {
     console.log("ERROR CREATING TASK: ", error);
@@ -47,12 +45,12 @@ export async function POST(req: Request) {
 export async function GET(req: Request) {
   try {
     const { userId } = auth();
-
+    
     if (!userId) {
       return NextResponse.json({ error: "Unauthorized", status: 401 });
     }
-
-    const tasks = await prisma.task.findFirst({
+    
+    const tasks = await prisma.task.findMany({
       where: {
         userId,
       },

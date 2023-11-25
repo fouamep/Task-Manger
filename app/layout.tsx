@@ -22,7 +22,7 @@ export default function RootLayout({
       <html lang="en">
         <body className=" min-w-[350px] p-4 lg:p-14 flex ">
           {userId && <Sidebar />}
-          <div className=' w-full bg-[#212022] rounded-3xl border border-[#436BF4]/[0.5] lg:ml-[50px] p-[30px]'>
+          <div className=' w-full bg-[#212022] rounded-3xl overflow-auto  no-scrollbar border border-[#436BF4]/[0.5] lg:ml-[50px] p-[30px]'>
             {children}
           </div>
         </body>

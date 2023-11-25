@@ -20,10 +20,10 @@ const items = [
         name:"Completed",
         href:"/Completed",
         svg:(<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 26 26" fill="none">
-                <path d="M4 17H11M20 14L16 18L14 16M4 12H15M4 7H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 17H11M20 14L16 18L14 16M4 12H15M4 7H15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>),
         svg1:(<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 26 26" fill="none">
-                <path d="M4 17H11M20 14L16 18L14 16M4 12H15M4 7H15" stroke="#436BF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 17H11M20 14L16 18L14 16M4 12H15M4 7H15" stroke="#436BF4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>)
     },
     {
@@ -31,12 +31,12 @@ const items = [
         href:"/AddTask",
         svg: (
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 17H10M15 16H18M18 16H21M18 16V19M18 16V13M3 12H14M3 7H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 17H10M15 16H18M18 16H21M18 16V19M18 16V13M3 12H14M3 7H14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         ),
         svg1: (
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 17H10M15 16H18M18 16H21M18 16V19M18 16V13M3 12H14M3 7H14" stroke="#436BF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 17H10M15 16H18M18 16H21M18 16V19M18 16V13M3 12H14M3 7H14" stroke="#436BF4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         )
     },

@@ -1,1 +1,5 @@
-{}
+{
+  "/api/tasks/route": "app/api/tasks/route.js",
+  "/AddTask/page": "app/AddTask/page.js",
+  "/AllTasks/page": "app/AllTasks/page.js"
+}
