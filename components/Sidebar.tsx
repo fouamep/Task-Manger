@@ -5,6 +5,7 @@ import useMediaQuery from '@/app/hooks/useMediaQuery';
 import Link from 'next/link';
 import { useClerk } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
+import MobileHeaderBar from './MobileHeaderBar';
 
 const Sidebar = () => {
     const [Color, setColor] = useState("#fff");
@@ -45,7 +46,7 @@ const Sidebar = () => {
                 </button>
             </nav>
 
-        ): ("")}
+        ): (<MobileHeaderBar/>)}
     </>
   )
 }

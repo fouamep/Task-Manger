@@ -16,10 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/Completed/page.js"
     ],
-    "/page": [
+    "/AddTask/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/AddTask/page.js"
     ]
   }
 }

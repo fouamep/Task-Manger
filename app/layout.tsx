@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className=" min-w-[350px] p-4 lg:p-14 flex ">
+        <body className=" min-w-[350px] p-4 lg:p-14 flex relative ">
           {userId && <Sidebar />}
           <div className=' w-full bg-[#212022] rounded-3xl overflow-auto  no-scrollbar border border-[#436BF4]/[0.5] lg:ml-[50px] p-[30px]'>
             {children}
