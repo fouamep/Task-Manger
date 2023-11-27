@@ -10,7 +10,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Unauthorized", status: 401 });
     }
     
-    const { title, description, date, completed, important } = await req.json();
+    const { title, description, date, completed } = await req.json();
 
     if (!title || !description || !date) {
       return NextResponse.json({
@@ -66,7 +66,7 @@ export async function GET(req: Request) {
 export async function PUT(req: Request) {
   try {
     const { userId } = auth();
-    const { isCompleted, id } = await req.json();
+    const { title, description, date, isCompleted, id } = await req.json();
 
     if (!userId) {
       return NextResponse.json({ error: "Unauthorized", status: 401 });
@@ -78,6 +78,9 @@ export async function PUT(req: Request) {
       },
       data: {
         isCompleted,
+        title,
+        description,
+        date,
       },
     });
 
