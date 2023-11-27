@@ -1,6 +1,0 @@
-{
-  "/AllTasks/page": "app/AllTasks/page.js",
-  "/AddTask/page": "app/AddTask/page.js",
-  "/Completed/page": "app/Completed/page.js",
-  "/api/tasks/route": "app/api/tasks/route.js"
-}
